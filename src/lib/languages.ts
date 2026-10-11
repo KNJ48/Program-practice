@@ -201,6 +201,8 @@ export type RunKind =
   | "typescript"
   | "python"
   | "html"
+  | "preview"
+  | "none"
   | "unsupported";
 
 export function runKindOf(filename: string): RunKind {
