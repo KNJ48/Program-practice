@@ -45,7 +45,7 @@ export default function PreviewPanel({
     <iframe
       ref={iframeRef}
       key={html.length}
-      sandbox="allow-scripts"
+      sandbox="allow-scripts allow-same-origin"
       srcDoc={html}
       title={title}
       className="min-h-0 flex-1 bg-white"
