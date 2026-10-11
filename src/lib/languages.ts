@@ -221,9 +221,9 @@ export function runKindOf(filename: string): RunKind {
       return "python";
 
     case "html":
-      return "html";
+      return "preview";
 
     default:
-      return "unsupported";
+      return "none";
   }
 }
