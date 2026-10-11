@@ -1,0 +1,13 @@
+# Render Blueprint
+# GitHub に置いたあと、Render の「New → Blueprint」から
+# このリポジトリを選ぶだけでデプロイできます。
+# DB・環境変数・永続ディスクは不要です。
+services:
+  - type: web
+    name: codebase-learning
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
