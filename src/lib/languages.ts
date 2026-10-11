@@ -118,7 +118,7 @@ export const EXT_COLOR: Record<string, string> = {
 // アップロード可能な拡張子
 // ========================================
 
-export const UPLOADABLE_EXTS: string[] = [
+export const UPLOADABLE_EXTS = new Set<string>([
   "js",
   "jsx",
   "ts",
@@ -148,7 +148,7 @@ export const UPLOADABLE_EXTS: string[] = [
   "yml",
   "vue",
   "svelte",
-];
+]);
 
 // ========================================
 // エディタ言語判定
